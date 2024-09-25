@@ -1,0 +1,10 @@
+<?php
+if(isset($_POST['submit'])){
+    $firstname=mysqli_real_escape_string($con,$_POST['firstname']);
+    $lastname=mysqli_real_escape_string($con,$_POST['lastname']);
+    $gender=mysqli_real_escape_string($con,$_POST['gender']);
+    $dob=mysqli_real_escape_string($con,$_POST['date']);
+    $phonenumber=mysqli_real_escape_string($con,$_POST['pnumber']);
+    $password=mysqli_real_escape_string($con,$_POST['pswd']);
+    $cpassword=mysqli_real_escape_string($con,$_POST['cpswd']);  
+}
